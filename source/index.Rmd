@@ -1,0 +1,37 @@
+---
+title: "Assignment 3: Data Visualization"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("Analysis.R")
+ave_black_current
+per_black_current
+highest_black
+lowest_black
+ave_black_2008
+change_10_years
+```
+
+### Introduction + Summary Information
+My problem domain is jail population of different races. I first analyzed average value of black jail population across all the countries in the current year since black people is the most popular topic right now as the "Black life matters" is now popular. The average value of black jail population across all the countries in the current year is 101.5476. And the percentage of average value of black jail population across all the countries in the current year is 0.3357138. From this, we can see black jail population has a great proportion in totaljail population. Los Angeles has the highest black jail population. Then, I analyzed the average value of black jail population across all the countries in 2008 to compared with the current year. The change from 2008 to 2018 is 17.97339. We can see average value of black jail population decreased in 10 years.
+
+### Trends over time chart
+```{r echo = FALSE}
+trends_chart
+```
+I created the chart about the trend of percentage of value of population of different races across all the countries. From 1990 to 2000, black jail population is larger than white jail population. But after 2000, white jail population is greater than black jail population. However, latinx, native American and other racial population is a lot smaller than white and black jail population. From this, we can see the racism is eliminated since 2000. 
+
+### Variable comparison chart
+```{r echo = FALSE}
+compare_chart
+```
+I also found a relationship between the percentage of blacks in the total prison population and the percentage of whites in the total prison population. I focused on comparing black and white groups, which have great jail population compared to others. By calculating the proportion of these two races in the total population, and visually comparing them in the same graph, we can visualize the difference in incarceration rates between black and white groups. While the numbers fluctuate from year to year, blacks are still incarcerated at more than three times the rate of whites, reflecting inequality in the prison system.
+
+### Map
+```{r echo = FALSE}
+map_plot
+```
+I used us map of the percentage of black jail population to total jail population in 2018. The redness in the map stands for the percentage of black jail population. From this, we can see South-Central blacks have the highest percentage of prisons in the United States. This distribution may be related to the geographic distribution of the minority population. 
+
